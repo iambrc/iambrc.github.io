@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruchao Bao</title>
+    <meta
+      name="description"
+      content="Ruchao Bao (鲍汝超), M.S. student in Computational Mathematics at USTC."
+    />
+    <meta name="author" content="Ruchao Bao" />
+    <link rel="canonical" href="https://iambrc.github.io/" />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Ruchao Bao / 鲍汝超" />
+    <meta property="og:description" content="M.S. student in Computational Mathematics at USTC." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iambrc.github.io/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Serif+SC:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          document.documentElement.setAttribute(
+            "data-theme",
+            theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          );
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#about">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#honors">Honors &amp; Awards</a>
+          <a href="#experience">Education &amp; Experience</a>
+        </nav>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 3v2M12 19v2M5 5l1.5 1.5M17.5 17.5 19 19M3 12h2M19 12h2M5 19l1.5-1.5M17.5 6.5 19 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="wrap">
+        <div class="section-head">
+          <h2>About</h2>
+          <span class="index">01</span>
+        </div>
+        <article class="card profile">
+          <img class="avatar" src="./assets/images/avatar.png" alt="Portrait of Ruchao Bao" />
+          <div>
+            <h1>Ruchao Bao</h1>
+            <p class="cname">鲍汝超</p>
+            <dl class="info-list">
+              <div>
+                <dt>Role</dt>
+                <dd>M.S. Student</dd>
+              </div>
+              <div>
+                <dt>Affiliation</dt>
+                <dd>University of Science and Technology of China</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:iambrc@mail.ustc.edu.cn">iambrc@mail.ustc.edu.cn</a></dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/iambrc" target="_blank" rel="noopener">github.com/iambrc</a></dd>
+              </div>
+            </dl>
+          </div>
+          <p class="bio">
+            I am Ruchao Bao, an M.S. student in Computational Mathematics at the
+            <a href="http://en.ustc.edu.cn/" target="_blank" rel="noopener">University of Science and Technology of China (USTC)</a>.
+            I am advised by
+            <a href="http://staff.ustc.edu.cn/~lgliu" target="_blank" rel="noopener">Prof. Ligang Liu</a>
+            and work closely with
+            <a href="https://digiartomnis.github.io/index.html" target="_blank" rel="noopener">Dr. Zhongyuan Liu</a>
+            and
+            <a href="https://kiki007.github.io/" target="_blank" rel="noopener">Prof. Ziqi Wang</a>.
+            My current research interests include computer graphics, 3D scene generation, 3D assembly, computer-aided design, and LLMs.
+          </p>
+        </article>
+      </section>
+
+      <section id="publications" class="wrap">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <span class="index">02</span>
+        </div>
+        <div class="pub-list">
+          <article class="card pub">
+            <div class="pub-media">
+              <img class="pub-thumb" src="./assets/images/papers/part.jpg" alt="PART teaser" />
+            </div>
+            <div class="pub-body">
+              <h3>PART: Learning 3D Part Assembly and Retrieval with Transformers</h3>
+              <p class="authors">
+                <span class="me">Ruchao Bao</span>,
+                <a href="http://home.ustc.edu.cn/~wuwzh/" target="_blank" rel="noopener">Wenzheng Wu</a>,
+                <a href="https://xccelephant.github.io/" target="_blank" rel="noopener">Chucheng Xiang</a>,
+                <a href="https://digiartomnis.github.io/index.html" target="_blank" rel="noopener">Zhongyuan Liu</a>,
+                <a href="https://liuyuan-pal.github.io/" target="_blank" rel="noopener">Yuan Liu</a>,
+                Jinxin Dong,
+                <a href="http://staff.ustc.edu.cn/~lgliu" target="_blank" rel="noopener">Ligang Liu</a>,
+                <a href="https://kiki007.github.io/" target="_blank" rel="noopener">Ziqi Wang</a>
+              </p>
+              <p class="note">The 19th ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia (SIGGRAPH Asia 2026).</p>
+              <div class="pub-links">
+                <a class="chip" href="https://iambrc.github.io/PART-project-page/" target="_blank" rel="noopener">Project</a>
+                <button class="copy-btn" type="button" data-bibtex="part">BibTeX</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card pub">
+            <div class="pub-media">
+              <img class="pub-thumb" src="./assets/images/papers/gala.jpg" alt="GALA teaser" />
+            </div>
+            <div class="pub-body">
+              <h3>GALA: Geometry-Aware Language Model for Controllable Object Arrangement</h3>
+              <p class="authors">
+                <a href="https://xccelephant.github.io/" target="_blank" rel="noopener">Chucheng Xiang</a>,
+                <a href="https://rainzor.github.io/" target="_blank" rel="noopener">Runze Wang</a>,
+                Zhi Deng,
+                <span class="me">Ruchao Bao</span>,
+                Yuanwei Zhang,
+                <a href="https://openreview.net/profile?id=~Yuxuan_Xie1" target="_blank" rel="noopener">Yuxuan Xie</a>,
+                Hanliu Wang,
+                Liangzhen Fei,
+                <a href="http://home.ustc.edu.cn/~wuwzh/" target="_blank" rel="noopener">Wenzheng Wu</a>,
+                <a href="https://openreview.net/profile?id=~Cheng_Wan1" target="_blank" rel="noopener">Cheng Wan</a>,
+                Peifeng Li,
+                <a href="https://digiartomnis.github.io/index.html" target="_blank" rel="noopener">Zhongyuan Liu</a>,
+                <a href="http://staff.ustc.edu.cn/~lgliu/" target="_blank" rel="noopener">Ligang Liu</a>
+              </p>
+              <p class="note">The 19th ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia (SIGGRAPH Asia 2026).</p>
+              <div class="pub-links">
+                <a class="chip" href="https://xccelephant.github.io/paper/gala/" target="_blank" rel="noopener">Project</a>
+                <button class="copy-btn" type="button" data-bibtex="gala">BibTeX</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card pub">
+            <div class="pub-media">
+              <img class="pub-thumb" src="./assets/images/papers/colayout.jpg" alt="Co-Layout teaser" />
+            </div>
+            <div class="pub-body">
+              <h3>Co-Layout: LLM-driven Co-optimization for Interior Layout</h3>
+              <p class="authors">
+                <a href="https://xccelephant.github.io/" target="_blank" rel="noopener">Chucheng Xiang</a>,
+                <span class="me">Ruchao Bao</span>,
+                Biyin Feng,
+                <a href="http://home.ustc.edu.cn/~wuwzh/" target="_blank" rel="noopener">Wenzheng Wu</a>,
+                <a href="https://digiartomnis.github.io/index.html" target="_blank" rel="noopener">Zhongyuan Liu</a>,
+                Yirui Guan,
+                <a href="http://staff.ustc.edu.cn/~lgliu" target="_blank" rel="noopener">Ligang Liu</a>
+              </p>
+              <p class="note">The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026), Vol. 40, No. 17, pp. 14371–14379. (Poster)</p>
+              <div class="pub-links">
+                <a class="chip" href="https://arxiv.org/abs/2511.12474" target="_blank" rel="noopener">Paper</a>
+                <a class="chip" href="https://xccelephant.github.io/paper/co-layout/" target="_blank" rel="noopener">Project</a>
+                <a class="chip" href="https://github.com/xccElephant/co-layout" target="_blank" rel="noopener">Code</a>
+                <button class="copy-btn" type="button" data-bibtex="colayout">BibTeX</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card pub">
+            <div class="pub-media">
+              <img class="pub-thumb" src="./assets/images/papers/ids.jpg" alt="Scene layout teaser" />
+            </div>
+            <div class="pub-body">
+              <h3>Scene Layout via Conceptual Design</h3>
+              <p class="authors">
+                <a href="http://home.ustc.edu.cn/~wuwzh/" target="_blank" rel="noopener">Wenzheng Wu</a>,
+                <a href="https://xccelephant.github.io/" target="_blank" rel="noopener">Chucheng Xiang</a>,
+                Zhi Lin,
+                Yirui Guan,
+                <span class="me">Ruchao Bao</span>,
+                <a href="https://digiartomnis.github.io/index.html" target="_blank" rel="noopener">Zhongyuan Liu</a>,
+                <a href="https://kiki007.github.io/" target="_blank" rel="noopener">Ziqi Wang</a>,
+                <a href="http://staff.ustc.edu.cn/~lgliu" target="_blank" rel="noopener">Ligang Liu</a>
+              </p>
+              <p class="note">Shape Modeling International (SMI 2025), published in Computers &amp; Graphics, Vol. 136, Article 104553.</p>
+              <div class="pub-links">
+                <a class="chip" href="https://doi.org/10.1016/j.cag.2026.104553" target="_blank" rel="noopener">Paper</a>
+                <a class="chip" href="https://suchiwz.github.io/scene-layout-conceptual-design/" target="_blank" rel="noopener">Project</a>
+                <button class="copy-btn" type="button" data-bibtex="ids">BibTeX</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="honors" class="wrap">
+        <div class="section-head">
+          <h2>Honors &amp; Awards</h2>
+          <span class="index">03</span>
+        </div>
+        <div class="honor-list">
+          <article class="card honor">
+            <div class="year">2026</div>
+            <div>
+              <h3>First Place, <a href="https://mathmagic-official.github.io/AICAD/" target="_blank" rel="noopener">CAD Wireframe Neural Compression Challenge</a>, CSIAM GDC 2026 (MathMagic)</h3>
+            </div>
+          </article>
+          <article class="card honor">
+            <div class="year">2025</div>
+            <div>
+              <h3>Chiang Chen Industrial Charity Foundation Scholarship</h3>
+            </div>
+          </article>
+          <article class="card honor">
+            <div class="year">2024</div>
+            <div>
+              <h3>Provincial First Prize, National Undergraduate Mathematics Competition (Mathematics A)</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="wrap">
+        <div class="section-head">
+          <h2>Education &amp; Experience</h2>
+          <span class="index">04</span>
+        </div>
+        <div class="exp-list">
+          <article class="card exp">
+            <div class="logo-box">
+              <img src="./assets/images/logo-tencent.png" alt="Tencent" />
+            </div>
+            <div class="exp-body">
+              <div class="exp-top">
+                <h3>Research Intern</h3>
+                <span class="exp-date">Mar 2026 – Present</span>
+              </div>
+              <p class="note"><a href="https://ieg.tencent.com/" target="_blank" rel="noopener">Tencent, IEG</a></p>
+            </div>
+          </article>
+
+          <article class="card exp">
+            <div class="logo-box">
+              <img src="./assets/images/logo-ustc.png" alt="USTC" />
+            </div>
+            <div class="exp-body">
+              <div class="exp-top">
+                <h3>M.S. Student in Computational Mathematics</h3>
+                <span class="exp-date">Sep 2025 – Present</span>
+              </div>
+              <p class="note"><a href="http://en.ustc.edu.cn/" target="_blank" rel="noopener">University of Science and Technology of China</a></p>
+              <p class="note"><a href="https://math.ustc.edu.cn/" target="_blank" rel="noopener">School of Mathematical Sciences</a>, <a href="https://gcl.ustc.edu.cn/" target="_blank" rel="noopener">Graphics &amp; Geometric Computing Laboratory (GCL Lab)</a>.</p>
+            </div>
+          </article>
+
+          <article class="card exp">
+            <div class="logo-box">
+              <img src="./assets/images/logo-ustc.png" alt="USTC" />
+            </div>
+            <div class="exp-body">
+              <div class="exp-top">
+                <h3>B.S. in Computational Mathematics</h3>
+                <span class="exp-date">Sep 2021 – Jun 2025</span>
+              </div>
+              <p class="note"><a href="http://en.ustc.edu.cn/" target="_blank" rel="noopener">University of Science and Technology of China</a></p>
+              <p class="note"><a href="https://math.ustc.edu.cn/" target="_blank" rel="noopener">School of Mathematical Sciences</a>, GPA 3.84 / 4.3</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">© 2026 Ruchao Bao. Hosted on GitHub Pages.</div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
