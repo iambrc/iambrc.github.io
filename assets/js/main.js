@@ -1,10 +1,9 @@
 const bibtex = {
-  part: `@inproceedings{Bao2026PART,
+  part: `@article{bao2026part,
   title={PART: Learning 3D Part Assembly and Retrieval with Transformers},
   author={Bao, Ruchao and Wu, Wenzheng and Xiang, Chucheng and Liu, Zhongyuan and Liu, Yuan and Dong, Jinxin and Liu, Ligang and Wang, Ziqi},
-  booktitle={SIGGRAPH Asia 2026 Conference Papers},
-  year={2026},
-  publisher={ACM}
+  journal={arXiv preprint arXiv:2609.19872},
+  year={2026}
 }`,
   gala: `@inproceedings{Xiang2026GALA,
   title={GALA: Geometry-Aware Language Model for Controllable Object Arrangement},
