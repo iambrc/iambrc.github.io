@@ -47,31 +47,24 @@ function toast(message) {
   window.setTimeout(() => el.classList.remove("show"), 1800);
 }
 
-function copyBibtex(key) {
+function toggleBibtex(btn) {
+  const key = btn.dataset.bibtex;
   const text = bibtex[key];
   if (!text) return;
-  navigator.clipboard.writeText(text).then(() => toast("BibTeX copied"));
-}
-
-function initNav() {
-  const links = [...document.querySelectorAll(".nav a")];
-  const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        links.forEach((link) => {
-          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
-        });
-      });
-    },
-    { rootMargin: "-40% 0px -50% 0px", threshold: 0.01 }
-  );
-
-  sections.forEach((section) => observer.observe(section));
+  let block = btn.parentElement.nextElementSibling;
+  if (!block || !block.classList.contains("bibtex")) {
+    block = document.createElement("pre");
+    block.className = "bibtex";
+    block.hidden = true;
+    block.textContent = text;
+    block.title = "Click to copy";
+    block.addEventListener("click", () => {
+      navigator.clipboard.writeText(text).then(() => toast("BibTeX copied"));
+    });
+    btn.parentElement.after(block);
+  }
+  block.hidden = !block.hidden;
+  btn.setAttribute("aria-expanded", String(!block.hidden));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -79,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setTheme(
     saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
   );
-  initNav();
 
   document.getElementById("theme-toggle").addEventListener("click", () => {
     const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
@@ -87,6 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelectorAll("[data-bibtex]").forEach((btn) => {
-    btn.addEventListener("click", () => copyBibtex(btn.dataset.bibtex));
+    btn.addEventListener("click", () => toggleBibtex(btn));
   });
 });
