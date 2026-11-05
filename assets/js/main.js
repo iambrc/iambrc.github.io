@@ -5,12 +5,12 @@ const bibtex = {
   journal={arXiv preprint arXiv:2609.19872},
   year={2026}
 }`,
-  gala: `@inproceedings{Xiang2026GALA,
+  gala: `@inproceedings{xiang2026gala,
   title={GALA: Geometry-Aware Language Model for Controllable Object Arrangement},
   author={Xiang, Chucheng and Wang, Runze and Deng, Zhi and Bao, Ruchao and Zhang, Yuanwei and Xie, Yuxuan and Wang, Hanliu and Fei, Liangzhen and Wu, Wenzheng and Wan, Cheng and Li, Peifeng and Liu, Zhongyuan and Liu, Ligang},
-  booktitle={SIGGRAPH Asia 2026 Conference Papers},
+  booktitle={SIGGRAPH Asia 2026 Conference Papers (SA Conference Papers '26)},
   year={2026},
-  publisher={ACM}
+  doi={10.1145/3829340.3842289}
 }`,
   colayout: `@article{Xiang2026Co,
   title={Co-Layout: LLM-driven Co-optimization for Interior Layout},
